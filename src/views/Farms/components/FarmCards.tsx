@@ -36,8 +36,8 @@ const FarmCards: React.FC = () => {
       ? stakedValue[sushiIndex].tokenPriceInWeth
       : new BigNumber(0)
 
-  const BLOCKS_PER_YEAR = new BigNumber(2336000)
-  const SUSHI_PER_BLOCK = new BigNumber(80)
+  const BLOCKS_PER_YEAR = new BigNumber(2372500)
+  const SUSHI_PER_BLOCK = new BigNumber(70)
 
   if (stakedValue[0] != undefined) {
     console.log(stakedValue[0].poolWeight.toString())
