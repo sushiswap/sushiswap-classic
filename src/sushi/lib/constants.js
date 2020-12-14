@@ -294,5 +294,18 @@ export const supportedPools = [
     tokenSymbol: 'CRV',
     icon: '🐊',
   },
+  {
+    pid: 58,
+    lpAddresses: {
+      1: '0xaf988afF99d3d0cb870812C325C588D8D8CB7De8',
+    },
+    tokenAddresses: {
+      1: '0x1ceb5cb57c4d4e2b2433641b95dd330a33185a44',
+    },
+    name: 'Bee KP3R',
+    symbol: 'KP3R-ETH SLP',
+    tokenSymbol: 'KP3R',
+    icon: '🐝',
+  },
   // Perm Menu
 ]
