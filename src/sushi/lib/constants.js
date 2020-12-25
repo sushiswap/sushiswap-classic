@@ -412,7 +412,21 @@ export const supportedPools = [
     symbol: 'ANT-ETH SLP',
     tokenSymbol: 'ANT',
     icon: '♨️',
-  },*/
+  },
+  {
+    pid: 64,
+    lpAddresses: {
+      1: '0x378b4c5f2a8a0796a8d4c798ef737cf00ae8e667',
+    },
+    tokenAddresses: {
+      1: '0x960b236A07cf122663c4303350609A66A7B288C0',
+    },
+    name: 'Onsen Mid',
+    symbol: 'ANT-ETH SLP',
+    tokenSymbol: 'ANT',
+    icon: '♨️',
+  },
+  */
   {
     pid: 65,
     lpAddresses: {
