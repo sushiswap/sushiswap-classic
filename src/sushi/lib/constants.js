@@ -440,7 +440,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 84,
+    pid: 83,
     lpAddresses: {
       1: '0x26d8151e631608570f3c28bec769c3afee0d73a3',
     },
@@ -453,7 +453,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 86,
+    pid: 85,
     lpAddresses: {
       1: '0x8b00ee8606cc70c2dce68dea0cefe632cca0fb7b',
     },
@@ -466,7 +466,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 97,
+    pid: 96,
     lpAddresses: {
       1: '0xf55c33d94150d93c2cfb833bcca30be388b14964',
     },
@@ -557,21 +557,21 @@ export const supportedPools = [
     tokenSymbol: 'SFI',
     icon: '♨️',
   },
-  {
-    pid: 72,
+  /*{
+    pid: 99,
     lpAddresses: {
-      1: '0x71f7ae1d899ea19af0face5b25b9577c6a286c95',
+      1: '0xb1d38026062ac10feda072ca0e9b7e35f1f5795a',
     },
     tokenAddresses: {
       1: '0x5bc25f649fc4e26069ddf4cf4010f9f706c23831',
     },
     name: 'Onsen Low',
-    symbol: 'DFD-DUSD SLP',
+    symbol: 'DUSD-ETH SLP',
     tokenSymbol: 'DUSD',
     icon: '♨️',
-  },
+  },*/
   {
-    pid: 74,
+    pid: 73,
     lpAddresses: {
       1: '0x110492b31c59716ac47337e616804e3e3adc0b4a',
     },
@@ -584,7 +584,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 75,
+    pid: 74,
     lpAddresses: {
       1: '0x9360b76f8f5f932ac33d46a3ce82ad6c52a713e5',
     },
@@ -597,7 +597,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 76,
+    pid: 75,
     lpAddresses: {
       1: '0xa73df646512c82550c2b3c0324c4eedee53b400c',
     },
@@ -610,7 +610,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 82,
+    pid: 81,
     lpAddresses: {
       1: '0x53e9fb796b2feb4b3184afdf601c2a2797548d88',
     },
@@ -623,7 +623,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 83,
+    pid: 82,
     lpAddresses: {
       1: '0xe5f06db4f3473e7e35490f1f98017728496fe81e',
     },
@@ -636,7 +636,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 87,
+    pid: 86,
     lpAddresses: {
       1: '0xaa500101c73065f755ba9b902d643705ef2523e3',
     },
@@ -649,7 +649,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 93,
+    pid: 92,
     lpAddresses: {
       1: '0xb2c29e311916a346304f83aa44527092d5bd4f0f',
     },
@@ -662,7 +662,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 96,
+    pid: 95,
     lpAddresses: {
       1: '0xfceaaf9792139bf714a694f868a215493461446d',
     },
@@ -675,7 +675,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 99,
+    pid: 98,
     lpAddresses: {
       1: '0x71817445d11f42506f2d7f54417c935be90ca731',
     },
@@ -728,7 +728,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 73,
+    pid: 72,
     lpAddresses: {
       1: '0xb12aa722a3a4566645f079b6f10c89a3205b6c2c',
     },
@@ -741,7 +741,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 77,
+    pid: 76,
     lpAddresses: {
       1: '0xadeaa96a81ebba4e3a5525a008ee107385d588c3',
     },
@@ -754,7 +754,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 78,
+    pid: 77,
     lpAddresses: {
       1: '0xf1360c4ae1cead17b588ec1111983d2791b760d3',
     },
@@ -767,7 +767,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 79,
+    pid: 78,
     lpAddresses: {
       1: '0x0040a2cebc65894bc2cfb57565f9acfa33fab137',
     },
@@ -780,7 +780,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 80,
+    pid: 79,
     lpAddresses: {
       1: '0x9cd028b1287803250b1e226f0180eb725428d069',
     },
@@ -793,7 +793,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 81,
+    pid: 80,
     lpAddresses: {
       1: '0x67e475577b4036ee4f0f12fa2d538ed18cef48e3',
     },
@@ -806,7 +806,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 85,
+    pid: 84,
     lpAddresses: {
       1: '0xab3f8e0214d862bf7965d3cec7431d7c1a85cb34',
     },
@@ -819,7 +819,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 88,
+    pid: 87,
     lpAddresses: {
       1: '0xeb1b57d4f7d4557b032b66c422bc94a8e4af859e',
     },
@@ -832,7 +832,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 89,
+    pid: 88,
     lpAddresses: {
       1: '0x5f30aac9a472f6c33d5284f9d340c0d57ef33697',
     },
@@ -845,7 +845,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 90,
+    pid: 89,
     lpAddresses: {
       1: '0x83e5e791f4ab29d1b0941bc4d00f3d6027d1dae5',
     },
@@ -858,7 +858,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 91,
+    pid: 90,
     lpAddresses: {
       1: '0xd8b8b575c943f3d63638c9563b464d204ed8b710',
     },
@@ -871,7 +871,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 92,
+    pid: 91,
     lpAddresses: {
       1: '0xc2b0f2a7f736d3b908bdde8608177c8fc28c1690',
     },
@@ -884,7 +884,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 94,
+    pid: 93,
     lpAddresses: {
       1: '0x98c2f9d752e044dc2e1f1743bf0b76a7096eceb2',
     },
@@ -897,7 +897,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 95,
+    pid: 94,
     lpAddresses: {
       1: '0x8c2e6a4af15c94cf4a86cd3c067159f08571d780',
     },
@@ -910,7 +910,7 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 98,
+    pid: 97,
     lpAddresses: {
       1: '0xca658217ce94dfb2156a49a8fad0ff752cac39c2',
     },
