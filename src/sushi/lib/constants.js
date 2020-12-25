@@ -400,6 +400,19 @@ export const supportedPools = [
     tokenSymbol: 'ESD',
     icon: '♨️',
   },
+  /*{
+    pid: 100,
+    lpAddresses: {
+      1: '0x201e6a9e75df132a8598720433af35fe8d73e94d',
+    },
+    tokenAddresses: {
+      1: '0xa117000000f279d81a1d3cc75430faa017fa5a2e',
+    },
+    name: 'Onsen Mid',
+    symbol: 'ANT-ETH SLP',
+    tokenSymbol: 'ANT',
+    icon: '♨️',
+  },
   {
     pid: 64,
     lpAddresses: {
@@ -413,6 +426,7 @@ export const supportedPools = [
     tokenSymbol: 'ANT',
     icon: '♨️',
   },
+  */
   {
     pid: 65,
     lpAddresses: {
