@@ -557,7 +557,7 @@ export const supportedPools = [
     tokenSymbol: 'SFI',
     icon: '♨️',
   },
-  /*{
+  {
     pid: 99,
     lpAddresses: {
       1: '0xb1d38026062ac10feda072ca0e9b7e35f1f5795a',
@@ -569,7 +569,7 @@ export const supportedPools = [
     symbol: 'DUSD-ETH SLP',
     tokenSymbol: 'DUSD',
     icon: '♨️',
-  },*/
+  },
   {
     pid: 73,
     lpAddresses: {
