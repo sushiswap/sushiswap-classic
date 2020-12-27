@@ -400,7 +400,7 @@ export const supportedPools = [
     tokenSymbol: 'ESD',
     icon: '♨️',
   },
-  /*{
+  {
     pid: 100,
     lpAddresses: {
       1: '0x201e6a9e75df132a8598720433af35fe8d73e94d',
@@ -412,7 +412,7 @@ export const supportedPools = [
     symbol: 'ANT-ETH SLP',
     tokenSymbol: 'ANT',
     icon: '♨️',
-  },*/
+  },
   {
     pid: 65,
     lpAddresses: {
