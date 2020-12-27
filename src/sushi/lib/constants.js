@@ -375,19 +375,6 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 53,
-    lpAddresses: {
-      1: '0x364248b2f1f57C5402d244b2D469A35B4C0e9dAB',
-    },
-    tokenAddresses: {
-      1: '0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7',
-    },
-    name: 'Onsen Mid',
-    symbol: 'AKRO-ETH SLP',
-    tokenSymbol: 'AKRO',
-    icon: '♨️',
-  },
-  {
     pid: 63,
     lpAddresses: {
       1: '0xdff71165a646be71fcfbaa6206342faa503aed5d',
@@ -479,6 +466,19 @@ export const supportedPools = [
     icon: '♨️',
   },
   // Onsen Lows
+  {
+    pid: 53,
+    lpAddresses: {
+      1: '0x364248b2f1f57C5402d244b2D469A35B4C0e9dAB',
+    },
+    tokenAddresses: {
+      1: '0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7',
+    },
+    name: 'Onsen Low',
+    symbol: 'AKRO-ETH SLP',
+    tokenSymbol: 'AKRO',
+    icon: '♨️',
+  },
   {
     pid: 35,
     lpAddresses: {
