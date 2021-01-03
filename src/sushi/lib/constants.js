@@ -908,18 +908,5 @@ export const supportedPools = [
     symbol: 'UOP-ETH SLP',
     tokenSymbol: 'UOP',
     icon: '♨️',
-  },
-  {
-    pid: 97,
-    lpAddresses: {
-      1: '0xca658217ce94dfb2156a49a8fad0ff752cac39c2',
-    },
-    tokenAddresses: {
-      1: '0x7ca4408137eb639570f8e647d9bd7b7e8717514a',
-    },
-    name: 'Onsen Gem',
-    symbol: 'ALPA-ETH SLP',
-    tokenSymbol: 'ALPA',
-    icon: '♨️',
-  },
+  }
 ]
