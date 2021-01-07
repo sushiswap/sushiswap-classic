@@ -307,6 +307,19 @@ export const supportedPools = [
     tokenSymbol: 'KP3R',
     icon: '🐝',
   },
+  {
+    pid: 101,
+    lpAddresses: {
+      1: '0x66ae32178640813f3c32a9929520bfe4fef5d167',
+    },
+    tokenAddresses: {
+      1: '0x4688a8b1f292fdab17e9a90c8bc379dc1dbd8713',
+    },
+    name: 'COVER Shield',
+    symbol: 'COVER-ETH SLP',
+    tokenSymbol: 'COVER',
+    icon: '🛡️',
+  },
   // yearn current allocation
   {
     pid: 25,
