@@ -30,7 +30,7 @@ const App: React.FC = () => {
     <Providers>
       <Router>
         <div>
-          <div className="rounded-md bg-red-50 py-8 px-4 sm:px-6 md:px-10 lg:px-32 shadow">
+          <div className="m-2 rounded-md bg-red-50 py-8 px-4 sm:px-6 md:px-10 lg:px-32 border-2 border-red-400 shadow">
             <div className="flex">
               <div className="flex-shrink-0">
                 {/* Heroicon name: x-circle */}
