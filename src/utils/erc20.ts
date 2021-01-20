@@ -1,6 +1,7 @@
 import Web3 from 'web3'
 import { provider } from 'web3-core'
 import { Contract } from 'web3-eth-contract'
+//@ts-ignore
 import { AbiItem } from 'web3-utils'
 import ERC20ABI from '../constants/abi/ERC20.json'
 
