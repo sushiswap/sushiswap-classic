@@ -54,8 +54,19 @@ const App: React.FC = () => {
                   enhancements, this interface will be deprecated on Monday Jan
                   25, 2021. Please begin visiting{' '}
                   <a href="https://www.sushiswap.fi">
-                    https://www.sushiswap.fi
+                    https://www.sushiswap.fi.
                   </a>
+                  <div className="mt-2"></div>
+                  This interface will be retained at{' '}
+                  <a href="https://classic.sushiswap.fi">
+                    classic.sushiswap.fi
+                  </a>
+                  , but considered deprecated and no longer recieve feature
+                  updates.
+                </h3>
+                <h3 className="text-sm font-semibold text-red-800">
+                  You do not need to take any action for your xsushi or farm
+                  positions.
                 </h3>
                 <div className="mt-2 text-sm text-red-700">
                   <ul className="list-disc pl-5 space-y-1">
