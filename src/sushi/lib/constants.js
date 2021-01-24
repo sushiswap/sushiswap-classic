@@ -330,7 +330,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2',
     },
-    name: 'Onsen Mid',
+    name: 'Onsen',
     symbol: 'MKR-ETH SLP',
     tokenSymbol: 'MKR',
     icon: '♨️',
@@ -343,12 +343,25 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xd26114cd6EE289AccF82350c8d8487fedB8A0C07',
     },
-    name: 'Onsen Mid',
+    name: 'Onsen',
     symbol: 'OMG-ETH SLP',
     tokenSymbol: 'OMG',
     icon: '♨️',
   },
   // Onsen 1.5
+  {
+    pid: 103,
+    lpAddresses: {
+      1: '0x9a13867048e01c663ce8ce2fe0cdae69ff9f35e3',
+    },
+    tokenAddresses: {
+      1: '0x798d1be841a82a273720ce31c822c61a67a601c3',
+    },
+    name: 'Onsen',
+    symbol: 'DIGG-WBTC SLP',
+    tokenSymbol: 'DIGG',
+    icon: '♨️',
+  },
   {
     pid: 104,
     lpAddresses: {
