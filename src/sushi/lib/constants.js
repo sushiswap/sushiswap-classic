@@ -820,19 +820,6 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
-    pid: 71,
-    lpAddresses: {
-      1: '0x23a9292830fc80db7f563edb28d2fe6fb47f8624',
-    },
-    tokenAddresses: {
-      1: '0xb753428af26e81097e7fd17f40c88aaa3e04902c',
-    },
-    name: 'Onsen',
-    symbol: 'SFI-ETH SLP',
-    tokenSymbol: 'SFI',
-    icon: '♨️',
-  },
-  {
     pid: 99,
     lpAddresses: {
       1: '0xb1d38026062ac10feda072ca0e9b7e35f1f5795a',
@@ -1078,19 +1065,6 @@ export const supportedPools = [
     name: 'Onsen',
     symbol: '$ROPE-ETH SLP',
     tokenSymbol: '$ROPE',
-    icon: '♨️',
-  },
-  {
-    pid: 84,
-    lpAddresses: {
-      1: '0xab3f8e0214d862bf7965d3cec7431d7c1a85cb34',
-    },
-    tokenAddresses: {
-      1: '0x44ea84a85616f8e9cd719fc843de31d852ad7240',
-    },
-    name: 'Onsen',
-    symbol: 'nTRUMP-DAI SLP',
-    tokenSymbol: 'nTRUMP',
     icon: '♨️',
   },
   {
