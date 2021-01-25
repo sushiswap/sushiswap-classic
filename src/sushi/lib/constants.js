@@ -343,7 +343,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2',
     },
-    name: 'Onsen Mid',
+    name: 'Onsen',
     symbol: 'MKR-ETH SLP',
     tokenSymbol: 'MKR',
     icon: '♨️',
@@ -356,11 +356,286 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xd26114cd6EE289AccF82350c8d8487fedB8A0C07',
     },
-    name: 'Onsen Mid',
+    name: 'Onsen',
     symbol: 'OMG-ETH SLP',
     tokenSymbol: 'OMG',
     icon: '♨️',
   },
+  // Onsen 1.5
+  {
+    pid: 103,
+    lpAddresses: {
+      1: '0x9a13867048e01c663ce8ce2fe0cdae69ff9f35e3',
+    },
+    tokenAddresses: {
+      1: '0x798d1be841a82a273720ce31c822c61a67a601c3',
+    },
+    name: 'Onsen',
+    symbol: 'DIGG-WBTC SLP',
+    tokenSymbol: 'DIGG',
+    icon: '♨️',
+  },
+  {
+    pid: 104,
+    lpAddresses: {
+      1: '0x31d64f9403e82243e71c2af9d8f56c7dbe10c178',
+    },
+    tokenAddresses: {
+      1: '0x87d73E916D7057945c9BcD8cdd94e42A6F47f776',
+    },
+    name: 'Onsen',
+    symbol: 'NFTX-ETH SLP',
+    tokenSymbol: 'NFTX',
+    icon: '♨️',
+  },
+  {
+    pid: 105,
+    lpAddresses: {
+      1: '0xa8aec03d5cf2824fd984ee249493d6d4d6740e61',
+    },
+    tokenAddresses: {
+      1: '0x0b38210ea11411557c13457D4dA7dC6ea731B88a',
+    },
+    name: 'Onsen',
+    symbol: 'API3-ETH SLP',
+    tokenSymbol: 'API3',
+    icon: '♨️',
+  },
+  {
+    pid: 106,
+    lpAddresses: {
+      1: '0x8cd7dadc8e11c8706763e0de7332f5ea91e04e35',
+    },
+    tokenAddresses: {
+      1: '0xffffffff2ba8f66d4e51811c5190992176930278',
+    },
+    name: 'Onsen',
+    symbol: 'COMBO-ETH SLP',
+    tokenSymbol: 'COMBO',
+    icon: '♨️',
+  },
+  {
+    pid: 107,
+    lpAddresses: {
+      1: '0x51f5953659e7d63cf0ef60b8674ef819c225169e',
+    },
+    tokenAddresses: {
+      1: '0x0316EB71485b0Ab14103307bf65a021042c6d380',
+    },
+    name: 'Onsen',
+    symbol: 'HBTC-CREAM SLP',
+    tokenSymbol: 'HBTC',
+    icon: '♨️',
+  },
+  {
+    pid: 108,
+    lpAddresses: {
+      1: '0x54bcf4948e32a8706c286416e3ced37284f17fc9',
+    },
+    tokenAddresses: {
+      1: '0x66c0dded8433c9ea86c8cf91237b14e10b4d70b7',
+    },
+    name: 'Onsen',
+    symbol: 'MARS-USDT SLP',
+    tokenSymbol: 'MARS',
+    icon: '♨️',
+  },
+  {
+    pid: 109,
+    lpAddresses: {
+      1: '0xc558f600b34a5f69dd2f0d06cb8a88d829b7420a',
+    },
+    tokenAddresses: {
+      1: '0x5a98fcbea516cf06857215779fd812ca3bef1b32',
+    },
+    name: 'Onsen',
+    symbol: 'LDO-ETH SLP',
+    tokenSymbol: 'LDO',
+    icon: '♨️',
+  },
+  {
+    pid: 110,
+    lpAddresses: {
+      1: '0x87bf6386f7611afa452c642c2835a305a692607d',
+    },
+    tokenAddresses: {
+      1: '0xc36824905dff2eaaee7ecc09fcc63abc0af5abc5',
+    },
+    name: 'Onsen',
+    symbol: 'BAC-BAB SLP',
+    tokenSymbol: 'BAB',
+    icon: '♨️',
+  },
+  {
+    pid: 111,
+    lpAddresses: {
+      1: '0xbe1e98685fb293144325440c16f69954ffcb790c',
+    },
+    tokenAddresses: {
+      1: '0xDb0f18081b505A7DE20B18ac41856BCB4Ba86A1a',
+    },
+    name: 'Onsen',
+    symbol: 'pWING-ETH SLP',
+    tokenSymbol: 'pWING',
+    icon: '♨️',
+  },
+  {
+    pid: 112,
+    lpAddresses: {
+      1: '0x760166fa4f227da29ecac3bec348f5fa853a1f3c',
+    },
+    tokenAddresses: {
+      1: '0x760166fa4f227da29ecac3bec348f5fa853a1f3c',
+    },
+    name: 'Onsen',
+    symbol: 'TUSD-ETH SLP',
+    tokenSymbol: 'TUSD',
+    icon: '♨️',
+  },
+  {
+    pid: 113,
+    lpAddresses: {
+      1: '0x7b98e476de2c50b6fa284dbd410dd516f9a72b30',
+    },
+    tokenAddresses: {
+      1: '0x27702a26126e0B3702af63Ee09aC4d1A084EF628',
+    },
+    name: 'Onsen',
+    symbol: 'ALEPH-ETH SLP',
+    tokenSymbol: 'ALEPH',
+    icon: '♨️',
+  },
+  {
+    pid: 114,
+    lpAddresses: {
+      1: '0x02c6260ce42ea5cd055911ed0d4857ecd4583740',
+    },
+    tokenAddresses: {
+      1: '0x42d6622dece394b54999fbd73d108123806f6a18',
+    },
+    name: 'Onsen',
+    symbol: 'SPANK-ETH SLP',
+    tokenSymbol: 'SPANK',
+    icon: '♨️',
+  },
+  {
+    pid: 115,
+    lpAddresses: {
+      1: '0x663242d053057f317a773d7c262b700616d0b9a0',
+    },
+    tokenAddresses: {
+      1: '0xa3BeD4E1c75D00fa6f4E5E6922DB7261B5E9AcD2',
+    },
+    name: 'Onsen',
+    symbol: 'MTA-ETH SLP',
+    tokenSymbol: 'MTA',
+    icon: '♨️',
+  },
+  {
+    pid: 116,
+    lpAddresses: {
+      1: '0x0eee7f7319013df1f24f5eaf83004fcf9cf49245',
+    },
+    tokenAddresses: {
+      1: '0x374cb8c27130e2c9e04f44303f3c8351b9de61c1',
+    },
+    name: 'Onsen',
+    symbol: 'BAO-ETH SLP',
+    tokenSymbol: 'BAO',
+    icon: '♨️',
+  },
+  {
+    pid: 117,
+    lpAddresses: {
+      1: '0x18a797c7c70c1bf22fdee1c09062aba709cacf04',
+    },
+    tokenAddresses: {
+      1: '0xD291E7a03283640FDc51b121aC401383A46cC623',
+    },
+    name: 'Onsen',
+    symbol: 'RGT-ETH SLP',
+    tokenSymbol: 'RGT',
+    icon: '♨️',
+  },
+  {
+    pid: 118,
+    lpAddresses: {
+      1: '0xa7f11e026a0af768d285360a855f2bded3047530',
+    },
+    tokenAddresses: {
+      1: '0x875773784Af8135eA0ef43b5a374AaD105c5D39e',
+    },
+    name: 'Onsen',
+    symbol: 'IDLE-ETH SLP',
+    tokenSymbol: 'IDLE',
+    icon: '♨️',
+  },
+  {
+    pid: 119,
+    lpAddresses: {
+      1: '0x2ee59d346e41478b9dc2762527facf2082022a29',
+    },
+    tokenAddresses: {
+      1: '0xE95A203B1a91a908F9B9CE46459d101078c2c3cb',
+    },
+    name: 'Onsen',
+    symbol: 'aETH-USDT SLP',
+    tokenSymbol: 'aETH',
+    icon: '♨️',
+  },
+  {
+    pid: 120,
+    lpAddresses: {
+      1: '0x22def8cf4e481417cb014d9dc64975ba12e3a184',
+    },
+    tokenAddresses: {
+      1: '0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f',
+    },
+    name: 'Onsen',
+    symbol: 'SDT-ETH SLP',
+    tokenSymbol: 'SDT',
+    icon: '♨️',
+  },
+  {
+    pid: 121,
+    lpAddresses: {
+      1: '0x41328fdba556c8c969418ccccb077b7b8d932aa5',
+    },
+    tokenAddresses: {
+      1: '0x6810e776880c02933d47db1b9fc05908e5386b96',
+    },
+    name: 'Onsen',
+    symbol: 'GNO-ETH SLP',
+    tokenSymbol: 'GNO',
+    icon: '♨️',
+  },
+  {
+    pid: 122,
+    lpAddresses: {
+      1: '0xfa8c3f98debf3d0a192e2edf9182352332def35c',
+    },
+    tokenAddresses: {
+      1: '0x3449fc1cd036255ba1eb19d65ff4ba2b8903a69a',
+    },
+    name: 'Onsen',
+    symbol: 'BAC-ETH SLP',
+    tokenSymbol: 'BAC',
+    icon: '♨️',
+  },
+  {
+    pid: 123,
+    lpAddresses: {
+      1: '0xfa5bc40c3bd5afa8bc2fe6b84562fee16fb2df5f',
+    },
+    tokenAddresses: {
+      1: '0xE95A203B1a91a908F9B9CE46459d101078c2c3cb',
+    },
+    name: 'Onsen',
+    symbol: 'aETH-ETH SLP',
+    tokenSymbol: 'aETH',
+    icon: '♨️',
+  },
+  // Onsen 1.5
   {
     pid: 31,
     lpAddresses: {
@@ -369,7 +644,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x584bC13c7D411c00c01A62e8019472dE68768430',
     },
-    name: 'Onsen Mid',
+    name: 'Onsen',
     symbol: 'HEGIC-ETH SLP',
     tokenSymbol: 'HEGIC',
     icon: '♨️',
@@ -382,7 +657,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x2ba592F78dB6436527729929AAf6c908497cB200',
     },
-    name: 'Onsen Mid',
+    name: 'Onsen',
     symbol: 'CREAM-ETH SLP',
     tokenSymbol: 'CREAM',
     icon: '♨️',
@@ -395,7 +670,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x36F3FD68E7325a35EB768F1AedaAe9EA0689d723',
     },
-    name: 'Onsen Mid',
+    name: 'Onsen',
     symbol: 'ESD-ETH SLP',
     tokenSymbol: 'ESD',
     icon: '♨️',
@@ -408,7 +683,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xa117000000f279d81a1d3cc75430faa017fa5a2e',
     },
-    name: 'Onsen Mid',
+    name: 'Onsen',
     symbol: 'ANT-ETH SLP',
     tokenSymbol: 'ANT',
     icon: '♨️',
@@ -421,7 +696,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x93ed3fbe21207ec2e8f2d3c3de6e058cb73bc04d',
     },
-    name: 'Onsen Mid',
+    name: 'Onsen',
     symbol: 'PNK-ETH SLP',
     tokenSymbol: 'PNK',
     icon: '♨️',
@@ -434,7 +709,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xe28b3b32b6c345a34ff64674606124dd5aceca30',
     },
-    name: 'Onsen Mid',
+    name: 'Onsen',
     symbol: 'INJ-ETH SLP',
     tokenSymbol: 'INJ',
     icon: '♨️',
@@ -447,7 +722,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xbd2f0cd039e0bfcf88901c98c0bfac5ab27566e3',
     },
-    name: 'Onsen Mid',
+    name: 'Onsen',
     symbol: 'DSD-USDC SLP',
     tokenSymbol: 'DSD',
     icon: '♨️',
@@ -460,7 +735,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xa47c8bf37f92abed4a126bda807a7b7498661acd',
     },
-    name: 'Onsen Mid',
+    name: 'Onsen',
     symbol: 'UST-ETH SLP',
     tokenSymbol: 'UST',
     icon: '♨️',
@@ -473,7 +748,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xa1faa113cbe53436df28ff0aee54275c13b40975',
     },
-    name: 'Onsen Mid',
+    name: 'Onsen',
     symbol: 'ALPHA-ETH SLP',
     tokenSymbol: 'ALPHA',
     icon: '♨️',
@@ -487,7 +762,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'AKRO-ETH SLP',
     tokenSymbol: 'AKRO',
     icon: '♨️',
@@ -500,7 +775,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'PICKLE-ETH SLP',
     tokenSymbol: 'PICKLE',
     icon: '♨️',
@@ -513,7 +788,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x1494ca1f11d487c2bbe4543e90080aeba4ba3c2b',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'DPI-ETH SLP',
     tokenSymbol: 'DPI',
     icon: '♨️',
@@ -526,7 +801,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x38e4adb44ef08f22f5b5b76a8f0c2d0dcbe7dca1',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'CVP-ETH SLP',
     tokenSymbol: 'CVP',
     icon: '♨️',
@@ -539,7 +814,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xb4bebd34f6daafd808f73de0d10235a92fbb6c3d',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'YETI-ETH SLP',
     tokenSymbol: 'YETI',
     icon: '♨️',
@@ -552,22 +827,9 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x3c9d6c1c73b31c837832c72e04d3152f051fc1a9',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'BOR-ETH SLP',
     tokenSymbol: 'BOR',
-    icon: '♨️',
-  },
-  {
-    pid: 71,
-    lpAddresses: {
-      1: '0x23a9292830fc80db7f563edb28d2fe6fb47f8624',
-    },
-    tokenAddresses: {
-      1: '0xb753428af26e81097e7fd17f40c88aaa3e04902c',
-    },
-    name: 'Onsen Low',
-    symbol: 'SFI-ETH SLP',
-    tokenSymbol: 'SFI',
     icon: '♨️',
   },
   {
@@ -578,7 +840,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x5bc25f649fc4e26069ddf4cf4010f9f706c23831',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'DUSD-ETH SLP',
     tokenSymbol: 'DUSD',
     icon: '♨️',
@@ -591,7 +853,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x3472a5a71965499acd81997a54bba8d852c6e53d',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'BADGER-WBTC SLP',
     tokenSymbol: 'BADGER',
     icon: '♨️',
@@ -604,7 +866,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xa8e7ad77c60ee6f30bac54e2e7c0617bd7b5a03e',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'zLOT-ETH SLP',
     tokenSymbol: 'zLOT',
     icon: '♨️',
@@ -617,7 +879,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x0954906da0bf32d5479e25f46056d22f08464cab',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'INDEX-ETH SLP',
     tokenSymbol: 'INDEX',
     icon: '♨️',
@@ -630,7 +892,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x8064d9Ae6cDf087b1bcd5BDf3531bD5d8C537a68',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'oBTC-ETH SLP',
     tokenSymbol: 'oBTC',
     icon: '♨️',
@@ -643,7 +905,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x26cf82e4ae43d31ea51e72b663d26e26a75af729',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'mbBASED-ETH SLP',
     tokenSymbol: 'mbBASED',
     icon: '♨️',
@@ -656,7 +918,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xef9cd7882c067686691b6ff49e650b43afbbcc6b',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'FNX-ETH SLP',
     tokenSymbol: 'FNX',
     icon: '♨️',
@@ -669,7 +931,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x8888801af4d980682e47f1a9036e589479e835c5',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'MPH-ETH SLP',
     tokenSymbol: 'MPH',
     icon: '♨️',
@@ -682,7 +944,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x4c19596f5aaff459fa38b0f7ed92f11ae6543784',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'TRU-ETH SLP',
     tokenSymbol: 'TRU',
     icon: '♨️',
@@ -695,7 +957,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xcbc1065255cbc3ab41a6868c22d1f1c573ab89fd',
     },
-    name: 'Onsen Low',
+    name: 'Onsen',
     symbol: 'CRETH2-ETH SLP',
     tokenSymbol: 'CRETH2',
     icon: '♨️',
@@ -709,7 +971,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xad32A8e6220741182940c5aBF610bDE99E737b2D',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'DOUGH-ETH SLP',
     tokenSymbol: 'DOUGH',
     icon: '♨️',
@@ -722,7 +984,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xCa3FE04C7Ee111F0bbb02C328c699226aCf9Fd33',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'SEEN-ETH SLP',
     tokenSymbol: 'SEEN',
     icon: '♨️',
@@ -735,7 +997,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x1f3f9d3068568f8040775be2e8c03c103c61f3af',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'ARCH-ETH SLP',
     tokenSymbol: 'ARCH',
     icon: '♨️',
@@ -748,7 +1010,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x20c36f062a31865bed8a5b1e512d9a1a20aa333a',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'DFD-ETH SLP',
     tokenSymbol: 'DFD',
     icon: '♨️',
@@ -761,7 +1023,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x87edffde3e14c7a66c9b9724747a1c5696b742e6',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'SWAG-ETH SLP',
     tokenSymbol: 'SWAG',
     icon: '♨️',
@@ -774,7 +1036,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x8a9c67fee641579deba04928c4bc45f66e26343a',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'JRT-ETH SLP',
     tokenSymbol: 'JRT',
     icon: '♨️',
@@ -787,7 +1049,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xdbdd6f355a37b94e6c7d32fef548e98a280b8df5',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'UWL-ETH',
     tokenSymbol: 'UWL',
     icon: '♨️',
@@ -800,7 +1062,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x903bef1736cddf2a537176cf3c64579c3867a881',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'ICHI-ETH SLP',
     tokenSymbol: 'ICHI',
     icon: '♨️',
@@ -813,22 +1075,9 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x9d47894f8becb68b9cf3428d256311affe8b068b',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: '$ROPE-ETH SLP',
     tokenSymbol: '$ROPE',
-    icon: '♨️',
-  },
-  {
-    pid: 84,
-    lpAddresses: {
-      1: '0xab3f8e0214d862bf7965d3cec7431d7c1a85cb34',
-    },
-    tokenAddresses: {
-      1: '0x44ea84a85616f8e9cd719fc843de31d852ad7240',
-    },
-    name: 'Onsen Gem',
-    symbol: 'nTRUMP-DAI SLP',
-    tokenSymbol: 'nTRUMP',
     icon: '♨️',
   },
   {
@@ -839,7 +1088,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xe4f726adc8e89c6a6017f01eada77865db22da14',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'BCP-ETH SLP',
     tokenSymbol: 'BCP',
     icon: '♨️',
@@ -852,7 +1101,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x17525e4f4af59fbc29551bc4ece6ab60ed49ce31',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'YPIE-ETH SLP',
     tokenSymbol: 'YPIE',
     icon: '♨️',
@@ -865,7 +1114,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x78f225869c08d478c34e5f645d07a87d3fe8eb78',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'DEFI+L-ETH SLP',
     tokenSymbol: 'DEFI+L',
     icon: '♨️',
@@ -878,7 +1127,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x07150e919b4de5fd6a63de1f9384828396f25fdc',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'BASE-ETH SLP',
     tokenSymbol: 'BASE',
     icon: '♨️',
@@ -891,7 +1140,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x3a880652f47bfaa771908c07dd8673a787daed3a',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'DDX-USDC SLP',
     tokenSymbol: 'DDX',
     icon: '♨️',
@@ -904,7 +1153,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xf8c3527cc04340b208c854e985240c02f7b7793f',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'FRONT-USDT SLP',
     tokenSymbol: 'FRONT',
     icon: '♨️',
@@ -917,7 +1166,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xe4ae84448db5cfe1daf1e6fb172b469c161cb85f',
     },
-    name: 'Onsen Gem',
+    name: 'Onsen',
     symbol: 'UOP-ETH SLP',
     tokenSymbol: 'UOP',
     icon: '♨️',
