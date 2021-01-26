@@ -51,10 +51,13 @@ const App: React.FC = () => {
               <div className="ml-3">
                 <h3 className="text-sm font-medium text-red-800">
                   Please note, as part of SushiSwap's ongoing feature
-                  enhancements, this interface is now considered deprecated. It
-                  will no longer recieve updates or feature enhancements.{' '}
+                  enhancements, this interface is now considered deprecated.
+                  <br />
+                  It will no longer recieve updates or feature enhancements.
+                  <br />
+                  Please begin using{' '}
                   <a className="underline" href="https://www.sushiswap.fi">
-                    Please begin using https://www.sushiswap.fi.
+                    https://www.sushiswap.fi.
                   </a>
                   <div className="mt-2"></div>
                   This interface will be retained for your convenience, but will
