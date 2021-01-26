@@ -52,9 +52,9 @@ const App: React.FC = () => {
                 <h3 className="text-sm font-medium text-red-800">
                   Please note, as part of SushiSwap's ongoing feature
                   enhancements, this interface is now considered deprecated. It
-                  will no longer recieve updates or feature enhancements.
+                  will no longer recieve updates or feature enhancements.{' '}
                   <a href="https://www.sushiswap.fi">
-                    https://www.sushiswap.fi.
+                    Please begin using https://www.sushiswap.fi.
                   </a>
                   <div className="mt-2"></div>
                   This interface will be retained for your convenience, but will
@@ -67,20 +67,19 @@ const App: React.FC = () => {
                 <div className="mt-2 text-sm text-red-700">
                   <ul className="list-disc pl-5 space-y-1">
                     <li>
-                      New Menu functionality can be found at
+                      New Menu functionality can be found at{' '}
                       <a href="https://www.sushiswap.fi/farms">
                         https://www.sushiswap.fi/farms
                       </a>{' '}
-                      and Staking can be found at
+                      Staking can be found at{' '}
                       <a href="https://www.sushiswap.fi/sushibar">
                         https://www.sushiswap.fi/sushibar
                       </a>
-                      .
                     </li>
                     <li>
-                      It is recommended to use{' '}
-                      <a href="https://www.sushiswap.fi">
-                        https://www.sushiswap.fi
+                      Staking can be found at{' '}
+                      <a href="https://www.sushiswap.fi/sushibar">
+                        https://www.sushiswap.fi/sushibar
                       </a>
                     </li>
                   </ul>
