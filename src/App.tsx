@@ -51,40 +51,34 @@ const App: React.FC = () => {
               <div className="ml-3">
                 <h3 className="text-sm font-medium text-red-800">
                   Please note, as part of SushiSwap's ongoing feature
-                  enhancements, this interface will be deprecated on Monday Jan
-                  25, 2021. Please begin visiting{' '}
+                  enhancements, this interface is now considered deprecated. It
+                  will no longer recieve updates or feature enhancements.
                   <a href="https://www.sushiswap.fi">
                     https://www.sushiswap.fi.
                   </a>
                   <div className="mt-2"></div>
-                  This interface will be retained at{' '}
-                  <a href="https://classic.sushiswap.fi">
-                    classic.sushiswap.fi
-                  </a>
-                  , but considered deprecated and no longer recieve feature
-                  updates.
+                  This interface will be retained for your convenience, but will
+                  no longer recieve support.
                 </h3>
                 <h3 className="text-sm font-semibold text-red-800">
-                  You do not need to take any action for your xsushi or farm
-                  positions.
+                  You do not need to take any action for your staked sushi or
+                  staked farm positions.
                 </h3>
                 <div className="mt-2 text-sm text-red-700">
                   <ul className="list-disc pl-5 space-y-1">
                     <li>
-                      From Jan 25 - Jan 30 this landing page will be retained
-                      while all existing menu links will be redirected to new UI
-                      features at{' '}
+                      New Menu functionality can be found at
                       <a href="https://www.sushiswap.fi/farms">
                         https://www.sushiswap.fi/farms
                       </a>{' '}
-                      and{' '}
+                      and Staking can be found at
                       <a href="https://www.sushiswap.fi/sushibar">
                         https://www.sushiswap.fi/sushibar
                       </a>
                       .
                     </li>
                     <li>
-                      After Jan 30 this domain will immediately redirect to{' '}
+                      It is recommended to use{' '}
                       <a href="https://www.sushiswap.fi">
                         https://www.sushiswap.fi
                       </a>
