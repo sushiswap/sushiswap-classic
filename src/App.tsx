@@ -53,7 +53,7 @@ const App: React.FC = () => {
                   Please note, as part of SushiSwap's ongoing feature
                   enhancements, this interface is now considered deprecated. It
                   will no longer recieve updates or feature enhancements.{' '}
-                  <a href="https://www.sushiswap.fi">
+                  <a className="underline" href="https://www.sushiswap.fi">
                     Please begin using https://www.sushiswap.fi.
                   </a>
                   <div className="mt-2"></div>
@@ -68,17 +68,19 @@ const App: React.FC = () => {
                   <ul className="list-disc pl-5 space-y-1">
                     <li>
                       New Menu functionality can be found at{' '}
-                      <a href="https://www.sushiswap.fi/farms">
+                      <a
+                        className="underline"
+                        href="https://www.sushiswap.fi/farms"
+                      >
                         https://www.sushiswap.fi/farms
-                      </a>{' '}
-                      Staking can be found at{' '}
-                      <a href="https://www.sushiswap.fi/sushibar">
-                        https://www.sushiswap.fi/sushibar
                       </a>
                     </li>
                     <li>
                       Staking can be found at{' '}
-                      <a href="https://www.sushiswap.fi/sushibar">
+                      <a
+                        className="underline"
+                        href="https://www.sushiswap.fi/sushibar"
+                      >
                         https://www.sushiswap.fi/sushibar
                       </a>
                     </li>
