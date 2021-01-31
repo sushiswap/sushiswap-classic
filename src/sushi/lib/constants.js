@@ -363,6 +363,32 @@ export const supportedPools = [
   },
   // Onsen 1.5
   {
+    pid: 127,
+    lpAddresses: {
+      1: '0x17A2194D55f52Fd0C711e0e42B41975494bb109B',
+    },
+    tokenAddresses: {
+      1: '0x1337DEF16F9B486fAEd0293eb623Dc8395dFE46a',
+    },
+    name: 'Onsen',
+    symbol: 'ARMOR-ETH SLP',
+    tokenSymbol: 'ARMOR',
+    icon: '♨️',
+  },
+  {
+    pid: 128,
+    lpAddresses: {
+      1: '0x46ACb1187a6d83e26c0bB46A57Ffeaf23Ad7851E',
+    },
+    tokenAddresses: {
+      1: '0xFA2562da1Bba7B954f26C74725dF51fb62646313',
+    },
+    name: 'Onsen',
+    symbol: 'ASSY-ETH SLP',
+    tokenSymbol: 'ASSY',
+    icon: '♨️',
+  },
+  {
     pid: 103,
     lpAddresses: {
       1: '0x9a13867048e01c663ce8ce2fe0cdae69ff9f35e3',
