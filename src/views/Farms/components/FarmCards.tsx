@@ -37,7 +37,7 @@ const FarmCards: React.FC = () => {
       : new BigNumber(0)
 
   const BLOCKS_PER_YEAR = new BigNumber(2372500)
-  const SUSHI_PER_BLOCK = new BigNumber(60)
+  const SUSHI_PER_BLOCK = new BigNumber(50)
 
   if (stakedValue[0] != undefined) {
     console.log(stakedValue[0].poolWeight.toString())
