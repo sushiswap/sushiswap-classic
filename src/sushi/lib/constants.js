@@ -363,6 +363,19 @@ export const supportedPools = [
   },
   // Onsen 1.5
   {
+    pid: 129,
+    lpAddresses: {
+      1: '0xf79a07cd3488bbafb86df1bad09a6168d935c017',
+    },
+    tokenAddresses: {
+      1: '0xeea3311250fe4c3268f8e684f7c87a82ff183ec1',
+    },
+    name: 'Onsen',
+    symbol: 'ibETHv2-ALPHA SLP',
+    tokenSymbol: 'ibETHv2',
+    icon: '♨️',
+  },
+  {
     pid: 127,
     lpAddresses: {
       1: '0x17A2194D55f52Fd0C711e0e42B41975494bb109B',
