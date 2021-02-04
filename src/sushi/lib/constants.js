@@ -376,6 +376,32 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
+    pid: 130,
+    lpAddresses: {
+      1: '0xb46736888247c68c995b156ca86426ff32e27cc9',
+    },
+    tokenAddresses: {
+      1: '0x3832d2F059E55934220881F831bE501D180671A7',
+    },
+    name: 'Onsen',
+    symbol: 'renDOGE-ETH SLP',
+    tokenSymbol: 'renDOGE',
+    icon: '♨️',
+  },
+  {
+    pid: 131,
+    lpAddresses: {
+      1: '0x0c48ae092a7d35be0e8ad0e122a02351ba51fedd',
+    },
+    tokenAddresses: {
+      1: '0x8a9c4dfe8b9d8962b31e4e16f8321c44d48e246e',
+    },
+    name: 'Onsen',
+    symbol: 'NCT-ETH SLP',
+    tokenSymbol: 'NCT',
+    icon: '♨️',
+  },
+  {
     pid: 127,
     lpAddresses: {
       1: '0x17A2194D55f52Fd0C711e0e42B41975494bb109B',
