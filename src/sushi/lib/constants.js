@@ -402,6 +402,19 @@ export const supportedPools = [
     icon: '♨️',
   },
   {
+    pid: 132,
+    lpAddresses: {
+      1: '0x10b47177e92ef9d5c6059055d92ddf6290848991',
+    },
+    tokenAddresses: {
+      1: '0xc5bddf9843308380375a611c18b50fb9341f502a',
+    },
+    name: 'Onsen',
+    symbol: ' SLP',
+    tokenSymbol: 'yveCRV-ETH',
+    icon: '♨️',
+  },
+  {
     pid: 127,
     lpAddresses: {
       1: '0x17A2194D55f52Fd0C711e0e42B41975494bb109B',
