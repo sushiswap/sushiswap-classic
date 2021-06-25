@@ -29,36 +29,39 @@ const Button: React.FC<ButtonProps> = ({
   let buttonColor: string
   switch (variant) {
     case 'secondary':
-      buttonColor = color.grey[500]
+      buttonColor = color.red[500]
       break
     case 'default':
     default:
-      buttonColor = color.primary.main
+      buttonColor = color.white
   }
 
-  let boxShadow: string
+  let buttonBackground: string
+  switch (variant) {
+    case 'secondary':
+      buttonBackground = color.red[100]
+      break
+    case 'default':
+    default:
+      buttonBackground = color.red[500]
+  }
+
   let buttonSize: number
   let buttonPadding: number
   let fontSize: number
   switch (size) {
     case 'sm':
-      boxShadow = `4px 4px 8px ${color.grey[300]},
-        -8px -8px 16px ${color.grey[100]}FF;`
       buttonPadding = spacing[3]
       buttonSize = 36
       fontSize = 14
       break
     case 'lg':
-      boxShadow = `6px 6px 12px ${color.grey[300]},
-        -12px -12px 24px ${color.grey[100]}ff;`
       buttonPadding = spacing[4]
       buttonSize = 72
       fontSize = 16
       break
     case 'md':
     default:
-      boxShadow = `6px 6px 12px ${color.grey[300]},
-        -12px -12px 24px -2px ${color.grey[100]}ff;`
       buttonPadding = spacing[4]
       buttonSize = 56
       fontSize = 16
@@ -76,8 +79,8 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <StyledButton
-      boxShadow={boxShadow}
       color={buttonColor}
+      backgroundColor={buttonBackground}
       disabled={disabled}
       fontSize={fontSize}
       onClick={onClick}
@@ -91,8 +94,8 @@ const Button: React.FC<ButtonProps> = ({
 }
 
 interface StyledButtonProps {
-  boxShadow: string,
   color: string,
+  backgroundColor: string,
   disabled?: boolean,
   fontSize: number,
   padding: number,
@@ -101,24 +104,24 @@ interface StyledButtonProps {
 
 const StyledButton = styled.button<StyledButtonProps>`
   align-items: center;
-  background-color: ${props => props.theme.color.grey[200]};
+  background-color: ${props => !props.disabled ? props.backgroundColor : props.theme.color.grey[300]};
   border: 0;
-  border-radius: 12px;
-  box-shadow: ${props => props.boxShadow};
-  color: ${props => !props.disabled ? props.color : `${props.color}55`};
+  border-radius: 48px;
+  color: ${props => !props.disabled ? props.color : props.theme.color.grey[600]};
   cursor: pointer;
   display: flex;
   font-size: ${props => props.fontSize}px;
-  font-weight: 700;
+  font-weight: 600;
   height: ${props => props.size}px;
   justify-content: center;
   outline: none;
+  letter-spacing: 1px;
   padding-left: ${props => props.padding}px;
   padding-right: ${props => props.padding}px;
   pointer-events: ${props => !props.disabled ? undefined : 'none'};
   width: 100%;
   &:hover {
-    background-color: ${props => props.theme.color.grey[100]};
+    background-color: ${props => props.theme.color.red[400]};
   }
 `
 
