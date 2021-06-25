@@ -2,18 +2,18 @@ import React from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
 
-import chef from '../../assets/img/chef.png'
+import tomatoLogo from '../../assets/img/new-tomato-logo.png'
 
 import Button from '../../components/Button'
 import Page from '../../components/Page'
 import PageHeader from '../../components/PageHeader'
 import WalletProviderModal from '../../components/WalletProviderModal'
-
 import useModal from '../../hooks/useModal'
 
 import Farm from '../Farm'
-
 import FarmCards from './components/FarmCards'
+
+
 
 const Farms: React.FC = () => {
   const { path } = useRouteMatch()
@@ -26,9 +26,9 @@ const Farms: React.FC = () => {
           <>
             <Route exact path={path}>
               <PageHeader
-                icon={<img src={chef} height="120" />}
-                subtitle="Earn SUSHI tokens by staking SushiSwap V2 SLP Tokens."
-                title="Select Your Favorite Dishes"
+                icon={<img src={tomatoLogo} height="120" />}
+                subtitle="Earn TOMATO tokens by staking Tokens."
+                title="Select Your Favorite Tomatoes"
               />
               <div
                 style={{
@@ -36,7 +36,7 @@ const Farms: React.FC = () => {
                   marginBottom: '2%'
                 }}
               >
-                Note: Current APY includes 2/3rd SUSHI emission that is locked for 6 months.
+              
               </div>
               <FarmCards />
             </Route>

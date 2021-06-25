@@ -11,33 +11,6 @@ const Nav: React.FC = () => {
       <StyledLink exact activeClassName="active" to="/farms">
         Menu
       </StyledLink>
-      <StyledLink exact activeClassName="active" to="/staking">
-        Staking
-      </StyledLink>
-      <StyledAbsoluteLink
-        href="https://sushiswap.fi/"
-        target="_blank"
-      >
-        SushiSwap Fi
-      </StyledAbsoluteLink>
-      <StyledAbsoluteLink
-        href="https://lite.sushiswap.fi/#/swap"
-        target="_blank"
-      >
-        SushiSwap Lite
-      </StyledAbsoluteLink>
-      <StyledAbsoluteLink
-        href="https://exchange.sushiswapclassic.org"
-        target="_blank"
-      >
-        Exchange
-      </StyledAbsoluteLink>
-      <StyledAbsoluteLink
-        href="https://docs.sushiswap.fi/"
-        target="_blank"
-      >
-        Help
-      </StyledAbsoluteLink>
     </StyledNav>
   )
 }
