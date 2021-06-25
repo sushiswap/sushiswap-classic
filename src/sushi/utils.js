@@ -84,6 +84,7 @@ export const getTotalLPWethValue = async (
   tokenContract,
   pid,
 ) => {
+  console.log('pid', pid)
   // WETH-TokenX LP tokens
   if (pid == 11) {
     // Get balance of the token address
@@ -158,7 +159,8 @@ export const getTotalNonWethLPWethValue = async (
   tokenContract,
   pid,
 ) => {
-  // TODO: Implement for SHIBA/Tomato
+  // WETH/Tomato LP
+  const wethTomatoLpContract = "0xd07Ed5D3567a2f6479d26E4b38e4974A423F6240"
 
   // Get balance of the token address
   const tokenAmountWholeLP = await tokenContract.methods
@@ -172,30 +174,43 @@ export const getTotalNonWethLPWethValue = async (
   // Convert that into the portion of total lpContract = p1
   const totalSupply = await lpContract.methods.totalSupply().call()
   // Get total weth value for the lpContract = w1
-  const lpContractWeth = await wethContract.methods
-    .balanceOf(lpContract.options.address)
-    .call()
   // Return p1 * w1 * 2
   const portionLp = new BigNumber(balance).div(new BigNumber(totalSupply))
-  const lpWethWorth = new BigNumber(lpContractWeth)
-  const totalLpWethValue = portionLp.times(lpWethWorth).times(new BigNumber(2))
   // Calculate
   const tokenAmount = new BigNumber(tokenAmountWholeLP)
     .times(portionLp)
     .div(new BigNumber(10).pow(tokenDecimals))
 
-  const wethAmount = new BigNumber(lpContractWeth)
+  // WETH/Tomato calc
+  const tokenAmountWholeLP2 = await tokenContract.methods
+    .balanceOf(wethTomatoLpContract)
+    .call()
+
+  const portionLp2 = new BigNumber(tokenAmount).div(new BigNumber(tokenAmountWholeLP2))
+  const lpContractWeth2 = await wethContract.methods
+    .balanceOf(wethTomatoLpContract)
+    .call()
+  const lpWethWorth2 = new BigNumber(lpContractWeth2)
+  const totalLpWethValue2 = portionLp2.times(lpWethWorth2).times(new BigNumber(2))
+
+  const wethAmount = new BigNumber(lpContractWeth2)
     .times(portionLp)
     .div(new BigNumber(10).pow(18))
+
+  console.log('getTotalNonWethLPWethValue',
+    'tokenAmount', tokenAmount.toString(),
+    'wethAmount', wethAmount.toString(),
+    'totalWethValue', totalLpWethValue2.div(new BigNumber(10).pow(18)).toString(),
+    'tokenPriceInWeth', wethAmount.div(tokenAmount).toString(),
+  )
 
   return {
     tokenAmount,
     wethAmount,
-    totalWethValue: totalLpWethValue.div(new BigNumber(10).pow(18)),
+    totalWethValue: totalLpWethValue2.div(new BigNumber(10).pow(18)),
     tokenPriceInWeth: wethAmount.div(tokenAmount),
     poolWeight: await getPoolWeight(masterChefContract, pid),
   }
-
 }
 
 // tokenContract and lpContract are switched on purpose
