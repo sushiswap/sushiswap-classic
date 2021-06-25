@@ -186,7 +186,7 @@ export const getTotalNonWethLPWethValue = async (
     .balanceOf(wethTomatoLpContract)
     .call()
 
-  const portionLp2 = new BigNumber(tokenAmount).div(new BigNumber(tokenAmountWholeLP2))
+  const portionLp2 = new BigNumber(tokenAmount).times(new BigNumber(10).pow(tokenDecimals)).div(new BigNumber(tokenAmountWholeLP2))
   const lpContractWeth2 = await wethContract.methods
     .balanceOf(wethTomatoLpContract)
     .call()
@@ -196,13 +196,6 @@ export const getTotalNonWethLPWethValue = async (
   const wethAmount = new BigNumber(lpContractWeth2)
     .times(portionLp)
     .div(new BigNumber(10).pow(18))
-
-  console.log('getTotalNonWethLPWethValue',
-    'tokenAmount', tokenAmount.toString(),
-    'wethAmount', wethAmount.toString(),
-    'totalWethValue', totalLpWethValue2.div(new BigNumber(10).pow(18)).toString(),
-    'tokenPriceInWeth', wethAmount.div(tokenAmount).toString(),
-  )
 
   return {
     tokenAmount,
