@@ -27,6 +27,9 @@ const FarmCards: React.FC = () => {
   const { account } = useWallet()
   const stakedValue = useAllStakedValue()
 
+
+  // console.log('farms', farms);
+
   const sushiIndex = farms.findIndex(
     ({ tokenSymbol }) => tokenSymbol === 'ETH-TOMATO LP',
   )
@@ -128,15 +131,24 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
 
   return (
     <StyledCardWrapper>
-      {farm.tokenSymbol === 'SUSHI' && <StyledCardAccent />}
+      {(  farm.pid === 11 
+            || farm.pid === 12 
+            || farm.pid === 13 
+       )
+        && <StyledCardAccent />
+      }
       <Card>
         <CardContent>
           <StyledContent>
             <CardIcon>{farm.icon}</CardIcon>
             <StyledTitle>{farm.name}</StyledTitle>
+              {
+                farm.moreName &&
+                <StyledDetailMore>{farm.moreName}</StyledDetailMore>
+              }
             <StyledDetails>
               <StyledDetail>Deposit {farm.lpToken}</StyledDetail>
-              <StyledDetail>Earn {farm.earnToken.toUpperCase()}</StyledDetail>
+              <StyledDetail>Earn TOMATO</StyledDetail>
             </StyledDetails>
             <Spacer />
             <Button
@@ -279,6 +291,12 @@ const StyledDetails = styled.div`
 
 const StyledDetail = styled.div`
   color: ${(props) => props.theme.color.grey[500]};
+`
+
+const StyledDetailMore = styled.div`
+color: ${(props) => props.theme.color.grey[600]};
+  font-size: 20px;
+  font-weight: 700;
 `
 
 const StyledInsight = styled.div`

@@ -43,6 +43,10 @@ const StyledValue = styled.div`
   color: ${(props) => props.theme.color.grey[600]};
   font-size: 36px;
   font-weight: 700;
+
+  @media (max-width: 580px) {
+    font-size: 24px;
+  }
 `
 
 export default Value

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import chef from '../../assets/img/chef.png'
+import tomatoLogo from '../../assets/img/new-tomato-logo.png'
 import Button from '../../components/Button'
 import Container from '../../components/Container'
 import Page from '../../components/Page'
@@ -8,13 +8,14 @@ import PageHeader from '../../components/PageHeader'
 import Spacer from '../../components/Spacer'
 import Balances from './components/Balances'
 
+
 const Home: React.FC = () => {
   return (
     <Page>
       <PageHeader
-        icon={<img src={chef} height={120} />}
-        title="MasterChef is Ready"
-        subtitle="Stake SushiSwap LP tokens to claim your very own yummy SUSHI!"
+        icon={<img src={tomatoLogo} height={120} />}
+        title="Tomatoes are in season"
+        subtitle="Stake tokens to claim your very own juicy TOMATOes!"
       />
 
       <Container>
@@ -26,7 +27,7 @@ const Home: React.FC = () => {
           margin: '0 auto',
         }}
       >
-        <Button text="🔪 See the Menu" to="/farms" variant="secondary" />
+        <Button text="🚜 See the Menu" to="/farms" variant="secondary" />
       </div>
     </Page>
   )
