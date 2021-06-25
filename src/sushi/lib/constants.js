@@ -40,10 +40,10 @@ export const addressMap = {
 
 export const contractAddresses = {
   sushi: {
-    1: '0x82fd56D18C7dd07422bc138D8132837f90cacd28',
+    1: '0x82bd290afa5cC1b75F46822fEC415E2be51D7D46',
   },
   masterChef: {
-    1: '0x35E2A1D4bD22F6b2A26adC913E313506b02Bfd15',
+    1: '0x04eeffBBCcB616824cae5feDb3Df55E51dCF19d1',
   },
   weth: {
     1: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
@@ -242,10 +242,10 @@ export const supportedPools = [
   {
     pid: 11,
     lpAddresses: {
-      1: '0xBb3f883955934A6fbA3A56EF967656F5E11bb3f8',
+      1: '0x6270cB9b6730fDf96fc3040Af72b4bcEcbbd6679',
     },
     tokenAddresses: {
-      1: '0x82fd56D18C7dd07422bc138D8132837f90cacd28',
+      1: '0x82bd290afa5cC1b75F46822fEC415E2be51D7D46',
     },
     dexLPAddress: '',
     name: 'Tomato Plant',
@@ -258,10 +258,10 @@ export const supportedPools = [
   {
     pid: 12,
     lpAddresses: {
-      1: '0x30380B6F04BCDCd15fC741197463dC4631707642',
+      1: '0xD96e6B7CA1a9585ee97Df92271556baA5545F53e',
     },
     tokenAddresses: {
-      1: '0x82fd56D18C7dd07422bc138D8132837f90cacd28',
+      1: '0x82bd290afa5cC1b75F46822fEC415E2be51D7D46',
     },
     dexLPAddress: '',
     name: 'Dog Tomato',
@@ -274,10 +274,10 @@ export const supportedPools = [
   {
     pid: 13,
     lpAddresses: {
-      1: '0x82fd56D18C7dd07422bc138D8132837f90cacd28',
+      1: '0x82bd290afa5cC1b75F46822fEC415E2be51D7D46',
     },
     tokenAddresses: {
-      1: '0xBb3f883955934A6fbA3A56EF967656F5E11bb3f8',
+      1: '0x6270cB9b6730fDf96fc3040Af72b4bcEcbbd6679',
     },
     dexLPAddress: '',
     name: 'GMO Tomato',
