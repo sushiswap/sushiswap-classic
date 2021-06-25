@@ -116,10 +116,12 @@ const Balances: React.FC = () => {
       <Card>
         <CardContent>
           <Label text="Total TOMATO Supply" />
-          <Value
-            value={totalSupply ? getBalanceNumber(totalSupply) : 'Locked'}
-            decimals={0}
-          />
+
+            <Value
+              value={totalSupply ? getBalanceNumber(totalSupply) : 'Locked'}
+              decimals={0}
+            />
+    
         </CardContent>
         <Footnote>
           New rewards per block
@@ -160,5 +162,6 @@ const StyledBalance = styled.div`
   display: flex;
   flex: 1;
 `
+
 
 export default Balances
