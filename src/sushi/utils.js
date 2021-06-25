@@ -161,7 +161,7 @@ export const getTotalNonWethLPWethValue = async (
   pid,
 ) => {
   // WETH/Tomato LP
-  const wethTomatoLpContract = "0x061Cd6ec213Cd324221e89B1a2c1a3EF17BF1278"
+  const wethTomatoLpContract = "0xBb3f883955934A6fbA3A56EF967656F5E11bb3f8"
 
   // Get balance of the token address
   const tokenAmountWholeLP = await tokenContract.methods
