@@ -16,17 +16,17 @@ const Nav: React.FC = () => {
       >
         SushiSwap SUSHI-ETH
       </StyledLink> */}
-      <StyledLink target="_blank" href="">
+      <StyledLink target="_blank" href="https://discord.gg/QR9fps7dPx">
         Discord
       </StyledLink>
-      <StyledLink target="_blank" href="">
+      <StyledLink target="_blank" href="https://github.com/Tomato-Token/tomato-token-classic">
         Github
       </StyledLink>
-      <StyledLink target="_blank" href="">
+      <StyledLink target="_blank" href="https://twitter.com/tomatotoken">
         Twitter
       </StyledLink>
-      <StyledLink target="_blank" href="">
-        Medium
+      <StyledLink target="_blank" href="https://t.me/joinchat/YKLaxqnJU-82ODgx">
+        Telegram
       </StyledLink>
     </StyledNav>
   )
