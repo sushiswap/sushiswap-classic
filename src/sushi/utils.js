@@ -84,7 +84,6 @@ export const getTotalLPWethValue = async (
   tokenContract,
   pid,
 ) => {
-  console.log('pid', pid)
   // WETH-TokenX LP tokens
   if (pid == 11) {
     // Get balance of the token address
