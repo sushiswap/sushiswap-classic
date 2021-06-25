@@ -3,6 +3,7 @@ import { Contract } from 'web3-eth-contract'
 export interface Farm {
   pid: number
   name: string
+  moreName: string
   lpToken: string
   lpTokenAddress: string
   lpContract: Contract

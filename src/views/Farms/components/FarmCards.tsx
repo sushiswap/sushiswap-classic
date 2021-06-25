@@ -27,6 +27,9 @@ const FarmCards: React.FC = () => {
   const { account } = useWallet()
   const stakedValue = useAllStakedValue()
 
+
+  console.log('farms', farms);
+
   const sushiIndex = farms.findIndex(
     ({ tokenSymbol }) => tokenSymbol === 'ETH-TOMATO LP',
   )
@@ -139,6 +142,10 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
           <StyledContent>
             <CardIcon>{farm.icon}</CardIcon>
             <StyledTitle>{farm.name}</StyledTitle>
+              {
+                farm.moreName &&
+                <StyledDetailMore>{farm.moreName}</StyledDetailMore>
+              }
             <StyledDetails>
               <StyledDetail>Deposit {farm.lpToken}</StyledDetail>
               <StyledDetail>Earn TOMATO</StyledDetail>
@@ -284,6 +291,12 @@ const StyledDetails = styled.div`
 
 const StyledDetail = styled.div`
   color: ${(props) => props.theme.color.grey[500]};
+`
+
+const StyledDetailMore = styled.div`
+color: ${(props) => props.theme.color.grey[600]};
+  font-size: 20px;
+  font-weight: 700;
 `
 
 const StyledInsight = styled.div`
