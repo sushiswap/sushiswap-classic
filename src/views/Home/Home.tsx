@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import tomatoLogo from '../../assets/img/tomato-token-logo.png'
+import tomatoLogo from '../../assets/img/new-tomato-logo.png'
 import Button from '../../components/Button'
 import Container from '../../components/Container'
 import Page from '../../components/Page'

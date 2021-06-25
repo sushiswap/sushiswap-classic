@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
 
-import tomatoLogo from '../../assets/img/tomato-token-logo.png'
+import tomatoLogo from '../../assets/img/new-tomato-logo.png'
 
 import Button from '../../components/Button'
 import Page from '../../components/Page'
