@@ -84,6 +84,82 @@ export const getTotalLPWethValue = async (
   tokenContract,
   pid,
 ) => {
+  // WETH-TokenX LP tokens
+  if (pid == 11) {
+    // Get balance of the token address
+    const tokenAmountWholeLP = await tokenContract.methods
+      .balanceOf(lpContract.options.address)
+      .call()
+    const tokenDecimals = await tokenContract.methods.decimals().call()
+    // Get the share of lpContract that masterChefContract owns
+    const balance = await lpContract.methods
+      .balanceOf(masterChefContract.options.address)
+      .call()
+    // Convert that into the portion of total lpContract = p1
+    const totalSupply = await lpContract.methods.totalSupply().call()
+    // Get total weth value for the lpContract = w1
+    const lpContractWeth = await wethContract.methods
+      .balanceOf(lpContract.options.address)
+      .call()
+    // Return p1 * w1 * 2
+    const portionLp = new BigNumber(balance).div(new BigNumber(totalSupply))
+    const lpWethWorth = new BigNumber(lpContractWeth)
+    const totalLpWethValue = portionLp.times(lpWethWorth).times(new BigNumber(2))
+    // Calculate
+    const tokenAmount = new BigNumber(tokenAmountWholeLP)
+      .times(portionLp)
+      .div(new BigNumber(10).pow(tokenDecimals))
+
+    const wethAmount = new BigNumber(lpContractWeth)
+      .times(portionLp)
+      .div(new BigNumber(10).pow(18))
+
+    return {
+      tokenAmount,
+      wethAmount,
+      totalWethValue: totalLpWethValue.div(new BigNumber(10).pow(18)),
+      tokenPriceInWeth: wethAmount.div(tokenAmount),
+      poolWeight: await getPoolWeight(masterChefContract, pid),
+    }
+  } else if (pid == 13) { // non-WETH LP token
+    let ret = await getTotalNonWethLPWethValue(
+      masterChefContract,
+      wethContract,
+      lpContract,
+      tokenContract,
+      pid,
+    )
+    return ret;
+  } else if (pid == 3) { // WETH token
+    let ret = await getTotalWethWethValue(
+      masterChefContract,
+      wethContract,
+      lpContract,
+      tokenContract,
+      pid,
+    )
+    return ret;
+  } else { // Non-lp ERC20 tokens
+    let ret = await getTotalNonLPWethValue(
+      masterChefContract,
+      wethContract,
+      lpContract,
+      tokenContract,
+      pid,
+    )
+    return ret;
+  }
+}
+
+export const getTotalNonWethLPWethValue = async (
+  masterChefContract,
+  wethContract,
+  lpContract,
+  tokenContract,
+  pid,
+) => {
+  // TODO: Implement for SHIBA/Tomato
+
   // Get balance of the token address
   const tokenAmountWholeLP = await tokenContract.methods
     .balanceOf(lpContract.options.address)
@@ -111,6 +187,80 @@ export const getTotalLPWethValue = async (
   const wethAmount = new BigNumber(lpContractWeth)
     .times(portionLp)
     .div(new BigNumber(10).pow(18))
+
+  return {
+    tokenAmount,
+    wethAmount,
+    totalWethValue: totalLpWethValue.div(new BigNumber(10).pow(18)),
+    tokenPriceInWeth: wethAmount.div(tokenAmount),
+    poolWeight: await getPoolWeight(masterChefContract, pid),
+  }
+
+}
+
+// tokenContract and lpContract are switched on purpose
+export const getTotalNonLPWethValue = async (
+  masterChefContract,
+  wethContract,
+  tokenContract,
+  lpContract,
+  pid,
+) => {
+  // Get the share of tokenContract that masterChefContract owns
+  // div by 2 to get LP effect since deposit to uni needs two tokens
+  const balance = new BigNumber(await tokenContract.methods
+    .balanceOf(masterChefContract.options.address)
+    .call())
+    .div(new BigNumber(2))
+  // Convert that into the portion of total lpContract = p1
+
+  const totalSupply = await tokenContract.methods
+    .balanceOf(lpContract.options.address)
+    .call()
+  // Get total weth value for the lpContract = w1
+
+
+  const lpContractWeth = await wethContract.methods
+    .balanceOf(lpContract.options.address)
+    .call()
+  // Return p1 * w1 * 2
+  const portionLp = new BigNumber(balance).div(new BigNumber(totalSupply))
+  const lpWethWorth = new BigNumber(lpContractWeth)
+  const totalLpWethValue = portionLp.times(lpWethWorth).times(new BigNumber(2))
+  // Calculate
+  const tokenAmount = balance;
+
+  const wethAmount = new BigNumber(lpContractWeth)
+    .times(portionLp)
+    .div(new BigNumber(10).pow(18))
+
+  return {
+    tokenAmount,
+    wethAmount,
+    totalWethValue: totalLpWethValue.div(new BigNumber(10).pow(18)),
+    tokenPriceInWeth: wethAmount.div(tokenAmount),
+    poolWeight: await getPoolWeight(masterChefContract, pid),
+  }
+}
+
+export const getTotalWethWethValue = async (
+  masterChefContract,
+  wethContract,
+  lpContract,
+  tokenContract,
+  pid,
+) => {
+  // Get the share of tokenContract that masterChefContract owns
+  // div by 2 to get LP effect since deposit to uni needs two tokens
+  const balance = new BigNumber(await tokenContract.methods
+    .balanceOf(masterChefContract.options.address)
+    .call())
+
+  const totalLpWethValue = balance
+  // Calculate
+  const tokenAmount = balance.div(new BigNumber(2));
+  const wethAmount = balance.div(new BigNumber(2));
+
   return {
     tokenAmount,
     wethAmount,

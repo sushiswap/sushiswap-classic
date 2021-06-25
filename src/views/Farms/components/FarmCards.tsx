@@ -28,7 +28,7 @@ const FarmCards: React.FC = () => {
   const stakedValue = useAllStakedValue()
 
   const sushiIndex = farms.findIndex(
-    ({ tokenSymbol }) => tokenSymbol === 'SUSHI',
+    ({ tokenSymbol }) => tokenSymbol === 'ETH-TOMATO LP',
   )
 
   const sushiPrice =
@@ -37,12 +37,7 @@ const FarmCards: React.FC = () => {
       : new BigNumber(0)
 
   const BLOCKS_PER_YEAR = new BigNumber(2372500)
-  const SUSHI_PER_BLOCK = new BigNumber(50)
-
-  if (stakedValue[0] != undefined) {
-    console.log(stakedValue[0].poolWeight.toString())
-    console.log(stakedValue[0].totalWethValue.toString())
-  }
+  const SUSHI_PER_BLOCK = new BigNumber(1100000)
 
   const rows = farms.reduce<FarmWithStakedValue[][]>(
     (farmRows, farm, i) => {
@@ -54,7 +49,6 @@ const FarmCards: React.FC = () => {
               .times(SUSHI_PER_BLOCK)
               .times(BLOCKS_PER_YEAR)
               .times(stakedValue[i].poolWeight)
-              .times(3)
               .div(stakedValue[i].totalWethValue)
           : null,
       }
