@@ -128,7 +128,12 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
 
   return (
     <StyledCardWrapper>
-      {farm.tokenSymbol === 'SUSHI' && <StyledCardAccent />}
+      {(  farm.pid === 11 
+            || farm.pid === 12 
+            || farm.pid === 13 
+       )
+        && <StyledCardAccent />
+      }
       <Card>
         <CardContent>
           <StyledContent>

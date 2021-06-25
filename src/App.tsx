@@ -13,7 +13,8 @@ import useModal from './hooks/useModal'
 import theme from './theme'
 import Farms from './views/Farms'
 import Home from './views/Home'
-import Staking from './views/Staking'
+
+
 
 const App: React.FC = () => {
   const [mobileMenu, setMobileMenu] = useState(false)
@@ -41,9 +42,6 @@ const App: React.FC = () => {
           </Route>
           <Route path="/farms">
             <Farms />
-          </Route>
-          <Route path="/staking">
-            <Staking />
           </Route>
         </Switch>
       </Router>
