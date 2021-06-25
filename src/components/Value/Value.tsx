@@ -45,7 +45,7 @@ const StyledValue = styled.div`
   font-weight: 700;
 
   @media (max-width: 580px) {
-    font-size: 20px;
+    font-size: 24px;
   }
 `
 
