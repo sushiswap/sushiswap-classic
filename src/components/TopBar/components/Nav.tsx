@@ -11,6 +11,12 @@ const Nav: React.FC = () => {
       <StyledLink exact activeClassName="active" to="/farms">
         Menu
       </StyledLink>
+      <StyledAbsoluteLink
+        href="https://tomatotoken.farm"
+        target="_blank"
+      >
+        Back to Website
+      </StyledAbsoluteLink>
     </StyledNav>
   )
 }

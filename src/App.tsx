@@ -62,15 +62,10 @@ const App: React.FC = () => {
                   </button>
                 </div>
                 <div className="ml-3">
-                  <h3 className="text-sm font-medium text-red-800">
+                  <h3 className="text-sm font-semibold text-red-800">
                     TomatoToken is for entertainment purposes only. This application has not been audited. 
-                    You can lose your money in these types of applications.
+                    You can lose your money. Use at your own risk.
                   </h3>
-
-                  <h3 className="mt-4 text-sm font-semibold text-red-800">
-                    Use at your own risk.
-                  </h3>
-
                 </div>
               </div>
             </div>
