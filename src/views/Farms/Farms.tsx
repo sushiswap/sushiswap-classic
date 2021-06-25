@@ -8,12 +8,12 @@ import Button from '../../components/Button'
 import Page from '../../components/Page'
 import PageHeader from '../../components/PageHeader'
 import WalletProviderModal from '../../components/WalletProviderModal'
-
 import useModal from '../../hooks/useModal'
 
 import Farm from '../Farm'
-
 import FarmCards from './components/FarmCards'
+
+
 
 const Farms: React.FC = () => {
   const { path } = useRouteMatch()

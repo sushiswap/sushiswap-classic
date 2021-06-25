@@ -19,19 +19,21 @@ const Harvest: React.FC<HarvestProps> = ({ pid }) => {
   const [pendingTx, setPendingTx] = useState(false)
   const { onReward } = useReward(pid)
 
+  // console.log('earning:', earnings.toString());
+
   return (
     <Card>
       <CardContent>
         <StyledCardContentInner>
           <StyledCardHeader>
-            <CardIcon>🍣</CardIcon>
+            <CardIcon>🍅</CardIcon>
             <Value value={getBalanceNumber(earnings)} />
-            <Label text="SUSHI Earned" />
+            <Label text="TOMATO Earned" />
           </StyledCardHeader>
           <StyledCardActions>
             <Button
               disabled={!earnings.toNumber() || pendingTx}
-              text={pendingTx ? 'Collecting SUSHI' : 'Harvest'}
+              text={pendingTx ? 'Collecting TOMATO' : 'Harvest'}
               onClick={async () => {
                 setPendingTx(true)
                 await onReward()

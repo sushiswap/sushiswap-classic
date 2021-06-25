@@ -15,7 +15,7 @@ const Home: React.FC = () => {
       <PageHeader
         icon={<img src={tomatoLogo} height={120} />}
         title="Tomatoes are in season"
-        subtitle="Stake tokens to claim your very own juicy TOMATOs!"
+        subtitle="Stake tokens to claim your very own juicy TOMATOes!"
       />
 
       <Container>
