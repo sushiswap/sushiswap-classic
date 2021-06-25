@@ -121,7 +121,7 @@ export const getTotalLPWethValue = async (
       tokenPriceInWeth: wethAmount.div(tokenAmount),
       poolWeight: await getPoolWeight(masterChefContract, pid),
     }
-  } else if (pid == 13) { // non-WETH LP token
+  } else if (pid == 12) { // non-WETH LP token
     let ret = await getTotalNonWethLPWethValue(
       masterChefContract,
       wethContract,
@@ -159,7 +159,7 @@ export const getTotalNonWethLPWethValue = async (
   pid,
 ) => {
   // WETH/Tomato LP
-  const wethTomatoLpContract = "0xd07Ed5D3567a2f6479d26E4b38e4974A423F6240"
+  const wethTomatoLpContract = "0x061Cd6ec213Cd324221e89B1a2c1a3EF17BF1278"
 
   // Get balance of the token address
   const tokenAmountWholeLP = await tokenContract.methods
@@ -305,7 +305,6 @@ export const stake = async (masterChefContract, pid, amount, account) => {
     )
     .send({ from: account })
     .on('transactionHash', (tx) => {
-      console.log(tx)
       return tx.transactionHash
     })
 }
@@ -318,7 +317,6 @@ export const unstake = async (masterChefContract, pid, amount, account) => {
     )
     .send({ from: account })
     .on('transactionHash', (tx) => {
-      console.log(tx)
       return tx.transactionHash
     })
 }
@@ -327,7 +325,6 @@ export const harvest = async (masterChefContract, pid, account) => {
     .deposit(pid, '0')
     .send({ from: account })
     .on('transactionHash', (tx) => {
-      console.log(tx)
       return tx.transactionHash
     })
 }
@@ -350,7 +347,6 @@ export const redeem = async (masterChefContract, account) => {
       .exit()
       .send({ from: account })
       .on('transactionHash', (tx) => {
-        console.log(tx)
         return tx.transactionHash
       })
   } else {
@@ -366,7 +362,6 @@ export const enter = async (contract, amount, account) => {
       )
       .send({ from: account })
       .on('transactionHash', (tx) => {
-        console.log(tx)
         return tx.transactionHash
       })
 }
@@ -378,7 +373,6 @@ export const leave = async (contract, amount, account) => {
       )
       .send({ from: account })
       .on('transactionHash', (tx) => {
-        console.log(tx)
         return tx.transactionHash
       })
 }

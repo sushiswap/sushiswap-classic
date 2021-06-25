@@ -40,10 +40,10 @@ export const addressMap = {
 
 export const contractAddresses = {
   sushi: {
-    1: '0xFc7aD527e74b9502CCceD442d5c09cfF70d64bCb',
+    1: '0xB99dED1F7d0f0d0DA78effBf4dE9e6E8b3c68417',
   },
   masterChef: {
-    1: '0x5E3385D843CF0cB37ED67486CEF700De98a547f7',
+    1: '0x18619CDbb676A6b8EEC2082B2C6c6F8F3aA60078',
   },
   weth: {
     1: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
@@ -242,10 +242,10 @@ export const supportedPools = [
   {
     pid: 11,
     lpAddresses: {
-      1: '0xd07Ed5D3567a2f6479d26E4b38e4974A423F6240',
+      1: '0x061Cd6ec213Cd324221e89B1a2c1a3EF17BF1278',
     },
     tokenAddresses: {
-      1: '0xFc7aD527e74b9502CCceD442d5c09cfF70d64bCb',
+      1: '0xB99dED1F7d0f0d0DA78effBf4dE9e6E8b3c68417',
     },
     dexLPAddress: '',
     name: 'Tomato Plant (ETH-TOMATO LP)',
@@ -257,25 +257,10 @@ export const supportedPools = [
   {
     pid: 12,
     lpAddresses: {
-      1: '0xFc7aD527e74b9502CCceD442d5c09cfF70d64bCb',
+      1: '0xbacD2c117FE5Fbf8F920755cbF5E33D902a6d19c',
     },
     tokenAddresses: {
-      1: '0xd07Ed5D3567a2f6479d26E4b38e4974A423F6240',
-    },
-    dexLPAddress: '',
-    name: 'GMO Tomato',
-    symbol: 'TOMATO STAKE',
-    tokenSymbol: 'TOMATO',
-    icon: '🍅',
-    type: 'TOMATO-STAKE'
-  },
-  {
-    pid: 13,
-    lpAddresses: {
-      1: '0x54Bb1f4526b5f04A4B26fFA80c7505304a42BfE1',
-    },
-    tokenAddresses: {
-      1: '0xFc7aD527e74b9502CCceD442d5c09cfF70d64bCb',
+      1: '0xB99dED1F7d0f0d0DA78effBf4dE9e6E8b3c68417',
     },
     dexLPAddress: '',
     name: 'Dog Tomato (SHIB-TOMATO LP)',
@@ -284,4 +269,20 @@ export const supportedPools = [
     icon: '🍅',
     type: 'LP'
   },
+  {
+    pid: 13,
+    lpAddresses: {
+      1: '0xB99dED1F7d0f0d0DA78effBf4dE9e6E8b3c68417',
+    },
+    tokenAddresses: {
+      1: '0x061Cd6ec213Cd324221e89B1a2c1a3EF17BF1278',
+    },
+    dexLPAddress: '',
+    name: 'GMO Tomato',
+    symbol: 'TOMATO STAKE',
+    tokenSymbol: 'TOMATO',
+    icon: '🍅',
+    type: 'TOMATO-STAKE'
+  },
+
 ]

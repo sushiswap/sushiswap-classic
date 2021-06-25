@@ -30,7 +30,6 @@ const useAllStakedValue = () => {
   const masterChefContract = getMasterChefContract(sushi)
   const wethContact = getWethContract(sushi)
   const block = useBlock()
-
   const fetchAllStakedValue = useCallback(async () => {
     const balances: Array<StakedValue> = await Promise.all(
       farms.map(
@@ -52,7 +51,6 @@ const useAllStakedValue = () => {
           ),
       ),
     )
-
     setBalance(balances)
   }, [account, masterChefContract, sushi])
 
