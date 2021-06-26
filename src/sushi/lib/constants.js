@@ -281,7 +281,8 @@ export const supportedPools = [
     },
     dexLPAddress: '',
     name: 'GMO Tomato',
-    symbol: 'TOMATO STAKE',
+    moreName: '(STAKE TOMATO)',
+    symbol: 'TOMATO',
     tokenSymbol: 'TOMATO',
     icon: '🍅',
     type: 'TOMATO-STAKE'

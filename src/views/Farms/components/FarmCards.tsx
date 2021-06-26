@@ -149,7 +149,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
                 farm.moreName ?
                 <StyledDetailMore>{farm.moreName}</StyledDetailMore>
                 :
-                <div className="mt-8" />
+                <div className="mt-14" />
               }
             <StyledDetails>
               {/*(farm.pid == 11 || farm.pid === 12) ?
